@@ -1,0 +1,9 @@
+{
+  "main": "index.js",
+  "license": "ISC",
+  "description": "Módulo 1 - Trabalho Prático",
+  "type": "module",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
