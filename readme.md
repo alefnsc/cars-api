@@ -28,7 +28,7 @@ npm install
 
 Endpoints Documentation
 
-## 1. GET `/maisModelos`
+### GET `/maisModelos`
 
 **Description**: Fetches brands with the most models from the dataset.
 
@@ -36,7 +36,7 @@ Endpoints Documentation
 - **200 OK**: Returns an array of brands with the most models.
 - **400 Bad Request**: Error message if there's an issue reading the file or parsing the data.
 
-## 2. GET `/menosModelos`
+### GET `/menosModelos`
 
 **Description**: Fetches brands with the fewest models from the dataset.
 
@@ -44,7 +44,7 @@ Endpoints Documentation
 - **200 OK**: Returns an array of brands with the fewest models.
 - **400 Bad Request**: Error message if there's an issue reading the file or parsing the data.
 
-## 3. GET `/listaMaisModelos/:x`
+### GET `/listaMaisModelos/:x`
 
 **Description**: Fetches a list of brands sorted by the number of models in descending order, limited to the top 'x' entries.
 
@@ -55,7 +55,7 @@ Endpoints Documentation
 - **200 OK**: Returns an array of strings, each representing a brand followed by its model count, e.g., `["BrandA - 30", "BrandB - 25"]`.
 - **400 Bad Request**: Error message if there's an issue with the file reading, parsing, or if 'x' is not a valid number.
 
-## 4. GET `/listaMenosModelos/:x`
+### GET `/listaMenosModelos/:x`
 
 **Description**: Fetches a list of brands sorted by the number of models in ascending order, limited to the top 'x' entries.
 
@@ -66,7 +66,7 @@ Endpoints Documentation
 - **200 OK**: Returns an array of strings, each representing a brand followed by its model count, e.g., `["BrandA - 5", "BrandB - 8"]`.
 - **400 Bad Request**: Error message if there's an issue with the file reading, parsing, or if 'x' is not a valid number.
 
-## 5. POST `/listaModelos/`
+### POST `/listaModelos/`
 
 **Description**: Searches for models by a given brand name provided in the request body.
 
